@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main">
+        <section class="user-details">
+            <div class="logo">
+                <img src="./logo.jpg" alt="Testbook" width="118px" style="margin-top:20px">
+                <h2>Hello user!</h2>
+                <p>Enter your name to continue the Quiz.</p>
+            </div>
+            <div class="user-info">
+                <input type="text" name="userName" id="user" placeholder="ENTER YOUR NAME...">
+                <button style="height: 27px;" onclick="User()">ENTER</button>
+                <p>You'll have 10 seconds to answer each question</p>
+            </div>
+        </section>
+        <hr>
+        <section class="category">
+            <h2>Select Category</h2>
+            <div class="categories">
+                
+                <div class="buttons">
+                <button class="pipes-cisterns"><a href="http://127.0.0.1:5500/pipes-and-cisterns.html" target="_self"> Pipes And Cisterns</a></button>
+                <button class="probability"><a href="http://127.0.0.1:5500/probability.html" target="_self">Probability</a></button>
+                <button class="problems-on-ages"><a href="http://127.0.0.1:5500/problems-on-ages.html" target="_self">Problem On Ages</a></button>
+                <button class="profit-loss"><a href="http://127.0.0.1:5500/profit-and-loss.html" target="_self">Profit And Loss</a></button>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    <script src="./script.js"></script>
+    <script src="./questions.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Quiz Result</h1>
+        <div class="result">
+            <p class="user"><span class="change name"></span><span class="static"> your result is :</span></p>
+            <p class="time"><span class="static">Total Time Taken: </span><span class="change timetaken"></span><span class="static"> seconds</span></p>
+            <p class="questions"><span class="static">Total Questions: </span><span class="change">10</span></p>
+            <p class="attempt"><span class="static">Attempt: </span><span class="change attempted"></span></p>
+            <p class="attempt"><span class="static">Correct: </span><span class="change correct"></span></p>
+            <p class="attempt"><span class="static">Wrong: </span><span class="change wrong"></span></p>
+            <p class="attempt"><span class="static">Percentage: </span><span class="change percent"></span><span class="change">%</span></p>
+        </div>
+        
+            <div class="home_start">
+                
+                <div class="buttons">
+                <button class="start_again"><a target="_self"> Start Again</a></button>
+                <button class="home"><a href="http://127.0.0.1:5500/mainPage.html" target="_self">Go To Home</a></button>
+                </div>
+            </div>
+        
+    </div>
+    <script src="./script.js"></script>
+    <script src="./questions.js"></script>
+    <script>
+        const resultPage = document.querySelector(".result");
+    const userTag = resultPage.querySelector(".name");
+    const timeTag = resultPage.querySelector(".timetaken");
+    const attemptTag = resultPage.querySelector(".attempted");
+    const correctTag = resultPage.querySelector(".correct");
+    const wrongTag = resultPage.querySelector(".wrong");
+    const percentTag = resultPage.querySelector(".percent");
+    const startTag = document.querySelector(".start_again");
+    const linkTag = startTag.querySelector('a');
+
+    userTag.innerHTML=window.sessionStorage.getItem("Name");
+    timeTag.innerHTML=window.sessionStorage.getItem("TimeTaken");
+    correctTag.innerHTML=window.sessionStorage.getItem("Correct[]");
+    wrongTag.innerHTML=window.sessionStorage.getItem("Wrong[]");
+    const right = window.sessionStorage.getItem("Correct[]");
+    const notRight = window.sessionStorage.getItem("Wrong[]");
+    var pageUrl = window.sessionStorage.getItem("URL");
+    pageUrl = pageUrl.replace(',,','//');
+    pageUrl = pageUrl.replace(',','/');
+
+    percentTag.innerHTML = right*10;
+    attemptTag.innerHTML = (right*1)+(notRight*1);
+    linkTag.setAttribute("href",pageUrl);
+   window.sessionStorage.clear();
+    </script>
+</body>
+</html>

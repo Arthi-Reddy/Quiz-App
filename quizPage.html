@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizpage</title>
+    <style>
+        .quiz-question-box{
+            border: 2px solid rgb(221, 218, 218);
+            text-align: center;
+            border-radius: 7px;
+            padding: 10px;
+            font-family: sans-serif;
+            margin:5% 25%;
+           box-shadow:0px 3px 5px 1px  rgb(236, 236, 236);
+        }
+        
+        .options-list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           /* align-content: space-around; */
+           margin-top: 30px;
+            margin-left: 30px;
+        }
+        .option > span{
+            width: 250px;
+            height: 24px;
+            margin-bottom: 20px;
+            /* margin-left: 50px; */
+            background-color: #fbfafa;
+            border: 2px solid rgb(106, 187, 237);
+            border-radius: 45px;
+            color: rgb(106, 187, 237);
+            display: block;
+            padding-top: 8px;
+
+           
+        }
+        span:hover{
+            cursor: pointer;
+            background-color:rgb(22, 148, 227);
+            border: 2px solid rgb(234, 246, 250);
+            color: white;
+
+        }
+        .question{
+            width: fit-content;
+            border: 2px solid #afadad;
+            border-radius: 5px;
+            height: fit-content;
+            padding: 10px;
+            text-align: justify;
+        }
+        footer{
+            padding:20px
+        }
+        footer > button{
+            outline: none;
+            background-color: #fbfafa;
+            border: 2px solid rgb(106, 187, 237);
+            width: 171px;
+            height: 35px;
+            border-radius: 18px;
+            color:  rgb(106, 187, 237);
+            margin-left:10px;
+        }
+        footer > button:hover{
+            cursor: pointer;
+            background-color:rgb(22, 148, 227);
+            border: 2px solid rgb(234, 246, 250);
+            color: white;
+
+        }
+        .time-score{
+            display:flex;
+            justify-content: space-between;
+            margin: 21px 6px;
+        }
+        .timer{
+            width: 33px;
+            height: 24px;
+            border: 3px solid #5db9f2;
+            border-radius: 19px;
+            padding-top: 6px;
+            color: #109bf1;
+            font-weight: bolder;
+            font-size: 19px;
+                }
+
+             .title{
+                    padding: 10px;
+                    font-weight: 600;
+                }
+        
+    </style>
+</head>
+<body>
+   <div class="quiz-question-box">
+    <header>
+        <div class="title">Probability</div>
+        <div class="time-score">
+            <div class="timer">
+                <!-- <div class="time-left"></div> -->
+                <div class="timer-sec">300</div>
+            </div>
+            <div class="score">
+                <div class="score-text">Score:1</div>
+                <!-- <div class="score-text">1</div> -->
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="question">
+            <span>There are 15 boys and 10 girls in a class. If three students are selected at random, what is the probability that 1 girl and 2 boys are selected?</span>
+        </div>
+        <div class="options-list">
+            <div class="option">
+                <span>1/40</span>
+            </div>
+            <div class="option">
+                <span> 1/ 2</span>
+            </div>
+            <div class="option">
+                <span>21/46</span>
+            </div>
+            <div class="option">
+                <span>7/ 41 </span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <button class="next-btn" onclick="showQuestions(1)">Next Question</button>
+    </footer>
+   </div>
+   <script src="./script.js"></script>
+   <script src="./questions.js"></script>
+</body>
+</html>

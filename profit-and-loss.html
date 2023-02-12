@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizpage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="profitLoss-question-box">
+    <header>
+        <div class="title">Profit And Loss</div>
+        <div class="time-score">
+            <div class="timer">
+                <!-- <div class="time-left"></div> -->
+                <div class="timer-sec">300</div>
+            </div>
+            <div class="stop"></div>
+            <div class="score">
+                <div class="score-text"><span>Score:</span><span class="score_correct" style="font-weight:bolder">0</span></div>
+                <!-- <div class="score-text">1</div> -->
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="que_number"><span class="top">1</span><span>/10</span></div>
+        <div class="question">
+            <span>If an article is sold at Rs. 304.5, the shopkeeper incurs a loss of 13%. What should be his selling price?</span>
+        </div>
+        <div class="options-list">
+            <div class="option" onclick="optionSelected(this)"><span>395.5</span></div>
+            <div class="option" onclick="optionSelected(this)"><span>387.5</span></div>
+            <div class="option" onclick="optionSelected(this)"><span>399</span></div>
+            <div class="option" onclick="optionSelected(this)"><span>391.5</span></div>
+        </div>
+    </section>
+    <footer>
+        <button class="next-btn" onclick="showQuestions(1)">Next Question</button>
+    </footer>
+   </div>
+   <script src="./script.js"></script>
+   <script src="./questions.js"></script>
+   <!-- <script>
+    sessionStorage.clear();
+   </script> -->
+</body>
+</html>

@@ -1,0 +1,181 @@
+/* Quiz Page Styling */
+.probability-question-box,
+.problemonAges-question-box,
+.profitLoss-question-box, 
+.pipesandCistern-question-box{
+    border: 2px solid rgb(221, 218, 218);
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin:5% 25%;
+   box-shadow:0px 3px 5px 1px  rgb(236, 236, 236);
+}
+
+.options-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   /* align-content: space-around; */
+   margin-top: 30px;
+    margin-left: 30px;
+}
+.option > span{
+    width: 250px;
+    height: 24px;
+    margin-bottom: 20px;
+    /* margin-left: 50px; */
+    background-color: #fbfafa;
+    border: 2px solid rgb(106, 187, 237);
+    border-radius: 45px;
+    color: rgb(106, 187, 237);
+    display: block;
+    padding-top: 8px;
+
+   
+}
+
+.correct > span{
+    width: 250px;
+    height: 24px;
+    margin-bottom: 20px;
+    background-color:rgb(22, 148, 227);
+    border: 2px solid rgb(234, 246, 250);
+    color: white;
+    display: block;
+    padding-top: 8px;
+    border-radius: 45px;
+
+}
+
+.wrong > span{
+    width: 250px;
+    height: 24px;
+    margin-bottom: 20px;
+    background-color:rgb(234, 42, 12);
+    border: 2px solid rgb(234, 246, 250);
+    color: white;
+    display: block;
+    padding-top: 8px;
+    border-radius: 45px;
+
+}
+.disabled{
+    pointer-events: none;
+}
+
+span:hover{
+    cursor: pointer;
+    background-color:rgb(22, 148, 227);
+    border: 2px solid rgb(234, 246, 250);
+    color: white;
+
+}
+.question{
+    width: fit-content;
+    border: 2px solid #afadad;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 10px;
+    text-align: justify;
+}
+footer{
+    padding:20px
+}
+footer > button{
+    outline: none;
+    background-color: #fbfafa;
+    border: 2px solid rgb(106, 187, 237);
+    width: 171px;
+    height: 35px;
+    border-radius: 18px;
+    color:  rgb(106, 187, 237);
+    margin-left:10px;
+}
+footer > button:hover{
+    cursor: pointer;
+    background-color:rgb(106, 187, 237);
+    border: 2px solid rgb(234, 246, 250);
+    color: white;
+
+}
+.time-score{
+    display:flex;
+    justify-content: space-between;
+    margin: 21px 6px;
+}
+.timer, .que_number{
+    width: 33px;
+    height: 24px;
+    border: 3px solid #5db9f2;
+    border-radius: 19px;
+    padding: 4px;
+    color: #109bf1;
+    font-weight: bolder;
+    font-size: 19px;
+        }
+
+        .que_number{
+            position: absolute;
+            top: 173px;
+            left: 605px;
+            background-color: #fafafa;
+            padding: 3px;
+            width: 4%;
+            height: 4%;
+            border-radius: 60%;
+        }
+
+     .title{
+            padding: 10px;
+            font-weight: 600;
+        }
+        .stop{
+            margin-right: 415px;
+margin-top: 10px;
+        }
+        .Active{
+            color:red;
+            
+        }
+        .zero{
+            border: 3px solid red;
+            color:red;
+        }
+
+
+/* Result Page Styling */
+.main{
+    border: 2px solid rgb(221, 218, 218);
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin:5% 25%;
+   box-shadow: 2px 2px 2px  rgb(236, 236, 236);
+}
+h1{
+    color:rgb(66, 173, 240);
+}
+
+.buttons > button{
+    width: 146px;
+height: 40px;
+margin-bottom: 20px;
+margin-left: 50px;
+background-color: rgb(22, 148, 227);
+border: 2px solid rgb(234, 246, 250);
+color: #fafafa;
+border-radius: 50px;
+   
+}
+a{
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 16px;
+}
+.change{
+    font-weight: bolder;
+}
+.static{
+    color:rgb(95, 91, 91);
+}

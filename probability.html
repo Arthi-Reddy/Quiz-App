@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizpage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="probability-question-box">
+    <header>
+        <div class="title">Pipes and Cisterns</div>
+        <div class="time-score">
+            <div class="timer">
+                <!-- <div class="time-left"></div> -->
+                <div class="timer-sec">300</div>
+            </div>
+            <div class="stop"></div>
+            <div class="score">
+                <div class="score-text"><span>Score:</span><span class="score_correct" style="font-weight:bolder">0</span></div>
+                <!-- <div class="score-text">1</div> -->
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="que_number"><span class="top">1</span><span>/10</span></div>
+        <div class="question">
+            <span>There are 15 boys and 10 girls in a class. If three students are selected at random, what is the probability that 1 girl and 2 boys are selected?</span>
+        </div>
+        <div class="options-list">
+            <div class="option" onclick="optionSelected(this)"><span>1/40</span></div>
+            <div class="option" onclick="optionSelected(this)"><span>1/2</span></div>
+            <div class="option" onclick="optionSelected(this)"><span>21/46</span></div>
+            <div class="option" onclick="optionSelected(this)"><span>7/ 41</span></div>
+        </div>
+    </section>
+    <footer>
+        <button class="next-btn" onclick="showQuestions(1)">Next Question</button>
+    </footer>
+   </div>
+   <script src="./script.js"></script>
+   <script src="./questions.js"></script>
+   <!-- <script>
+    sessionStorage.clear();
+   </script> -->
+</body>
+</html>
